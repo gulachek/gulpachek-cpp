@@ -1,0 +1,23 @@
+{
+  "name": "gulpachek-cpp",
+  "version": "0.1.0",
+  "description": "Higher level C++ tools built on gulpachek",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulachek/gulpachek-cpp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulachek/gulpachek-cpp/issues"
+  },
+  "homepage": "https://github.com/gulachek/gulpachek-cpp#readme",
+  "dependencies": {
+    "gulpachek": "file:../gulpachek-0.1.0.tgz"
+  }
+}

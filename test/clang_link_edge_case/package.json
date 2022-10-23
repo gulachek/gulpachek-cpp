@@ -1,0 +1,15 @@
+{
+  "name": "rename_this",
+  "version": "1.0.0",
+  "description": "",
+  "main": "make.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulpachek-cpp": "file:../.."
+  }
+}
