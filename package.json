@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/gulachek/gulpachek-cpp#readme",
   "dependencies": {
-    "gulpachek": "file:../gulpachek-0.1.0.tgz"
+    "gulpachek": "^0.1.0"
   }
 }
