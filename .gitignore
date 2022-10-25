@@ -1,3 +1,4 @@
 node_modules
-.swp
+*.swp
 build
+test/**/package-lock.json
