@@ -1,6 +1,6 @@
 {
   "name": "gulpachek-cpp",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Higher level C++ tools built on gulpachek",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/gulachek/gulpachek-cpp#readme",
   "dependencies": {
     "commander": "^9.4.1",
-    "gulpachek": "^0.1.1",
+    "gulpachek": "^0.2.1",
     "semver": "^7.3.8"
   }
 }
