@@ -9,6 +9,10 @@ const cppBuild = new CppBuildCommand({
 	cppVersion: 20
 });
 
+cppBuild.on('configure', (cmd) => {
+	cmd.option('--always-specify-pack <foo>', 'always specify this in pack');
+});
+
 function foo(args) {
 	const { cpp } = args;
 
@@ -34,6 +38,9 @@ function foo(args) {
 
 cppBuild.pack((args) => {
 	const { sys, addTarget } = args;
+
+	if (args.opts.alwaysSpecifyPack !== 'foo')
+		throw new Error('--always-specify-pack not present');
 
 	addTarget(copyFile(sys.src('src/foo.cpp'), 'foo.cpp'));
 

@@ -24,7 +24,8 @@ echo "============================";
 	node test.js pack \
 		--target-platform posix \
 		--target-include-dir "$PACK/include" \
-		--target-lib-dir "$PACK/lib"
+		--target-lib-dir "$PACK/lib" \
+		--always-specify-pack foo
 
 	CPP_LIBROOT_PATH="$PACK"
 	function t ; { node test.js test "$@" }
@@ -42,7 +43,7 @@ echo "============================";
 	pwd
 	PACK="$PWD/build/devpack"
 	npm i
-	node test.js devpack
+	node test.js devpack --always-specify-pack foo
 
 	CPP_LIBROOT_PATH="$PACK"
 	function t ; { node test.js test "$@" }
