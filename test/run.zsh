@@ -33,3 +33,21 @@ echo "============================";
 	t --static-link && ./build/hello.debug
 	t --release --static-link && ./build/hello
 })
+
+echo "============================";
+echo devpack
+echo "============================";
+
+(cd test/pack && {
+	pwd
+	PACK="$PWD/build/devpack"
+	npm i
+	node test.js devpack
+
+	CPP_LIBROOT_PATH="$PACK"
+	function t ; { node test.js test "$@" }
+	t && ./build/hello.debug
+	t --release && ./build/hello
+	t --static-link && ./build/hello.debug
+	t --release --static-link && ./build/hello
+})
