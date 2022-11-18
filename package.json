@@ -1,6 +1,6 @@
 {
   "name": "gulpachek-cpp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Higher level C++ tools built on gulpachek",
   "main": "lib/index.js",
   "scripts": {
