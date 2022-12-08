@@ -2,3 +2,4 @@ node_modules
 *.swp
 build
 test/**/package-lock.json
+.vs
